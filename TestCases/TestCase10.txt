@@ -1,0 +1,17 @@
+#This is the mother all test. It should succeed. It checks for correct gramar on multiples of everything.
+
+Schemes:
+  snap(S,N,A,P)
+
+Facts:
+  snap('1','1','1','1').
+  snap('2','1','1','1').
+  snap('2','2','1','1').
+  snap('2','2','2','1').
+  snap('2','2','2','2').
+
+Rules:
+
+Queries:
+  snap(s,s,s,'1')?
+  snap(p,p,q,r)?

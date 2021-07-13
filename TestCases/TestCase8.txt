@@ -1,0 +1,10 @@
+Schemes:
+  snap(S,N,A,P,P,P,E,R,R,S)
+
+Facts:
+  snap('1','1','1','5','5','2','5','1','1','1').
+
+Rules:
+
+Queries:
+  snap(b,b,b,a,a,b,a,b,b,b)?

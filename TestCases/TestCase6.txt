@@ -1,0 +1,20 @@
+#This test will fail as Schemes cannot have a string within its parameters
+
+Schemes:
+  House(Name,Lord,Sigil,Words,Seat)
+
+Facts:
+  House('Arryn','Jon Arryn','Falcon','As High as Honor','The Eyrie').
+  House('Frey','Walder Frey','Grey Towers','We Stand Together','The Twins').
+  House('Greyjoy','Euron Greyjoy','Golden Kraken','We Do Not Sow','Pyke').
+  House('Lannister','Tywin Lannister','Lion','Hear me Roar!','Red Keep').
+  House('Stark','Eddard Stark','Wolf','Winter is Coming','Winterfell').
+  House('Targaryen','Aerys','Dragon','Fire and Blook','Dragonstone').
+
+Rules:
+
+Queries:
+  House(Name,Lord,Sigil,Words,Seat)?
+  House('Stark',Leader,Banner,Saying,Home)?
+  House(A,'Walder Frey',B,C,D)?
+  House(Name,Lord,Sigil,'As High as Honor',Seat)?

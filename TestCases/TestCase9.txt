@@ -1,0 +1,12 @@
+#This test will not pass. It will fail due to the lack of a COLON_DASH in rules
+
+Schemes:
+  snap(S,N,A,P)
+
+Facts: #comment
+  snap('A','A','B','A').
+  
+Rules:
+ 
+Queries:
+  snap(A,b,b,A)?
